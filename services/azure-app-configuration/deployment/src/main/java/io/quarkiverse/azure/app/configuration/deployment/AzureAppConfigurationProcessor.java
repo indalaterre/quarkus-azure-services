@@ -2,8 +2,6 @@ package io.quarkiverse.azure.app.configuration.deployment;
 
 import java.util.List;
 
-import com.azure.data.appconfiguration.implementation.models.GetKeyValuesHeaders;
-import com.azure.data.appconfiguration.implementation.models.KeyValueListResult;
 import com.azure.data.appconfiguration.models.ConfigurationSetting;
 
 import io.quarkiverse.azure.app.configuration.AzureAppConfigurationConfigBuilder;
@@ -37,10 +35,9 @@ public class AzureAppConfigurationProcessor {
             BuildProducer<ReflectiveClassBuildItem> reflectiveClasses) {
 
         nativeImageProxyDefinitions.produce(new NativeImageProxyDefinitionBuildItem(
-                List.of("com.azure.data.appconfiguration.implementation.ConfigurationClientImpl$ConfigurationService")));
+                List.of("com.azure.data.appconfiguration.implementation.ConfigurationClientImpl$ConfigurationClientService")));
 
         reflectiveClasses.produce(ReflectiveClassBuildItem.builder(
-                ConfigurationSetting.class, KeyValueListResult.class, GetKeyValuesHeaders.class).fields()
-                .methods().build());
+                ConfigurationSetting.class).fields().methods().build());
     }
 }
