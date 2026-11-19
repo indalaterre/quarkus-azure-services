@@ -9,7 +9,7 @@ import io.smallrye.config.WithDefault;
 @ConfigGroup
 public interface KeyVaultDevServicesConfig {
 
-    String DEFAULT_IMAGE_NAME = "nagyesta/lowkey-vault:4.0.0-ubi9-minimal";
+    String DEFAULT_IMAGE_NAME = "nagyesta/lowkey-vault:7.4.0-ubi10-minimal";
 
     /**
      * If Dev Services for Azure Key Vault has been explicitly enabled or disabled.
@@ -23,7 +23,7 @@ public interface KeyVaultDevServicesConfig {
      * registry</a> for available tags of the default image.
      * <p>
      * This extension has been tested and verified working with version
-     * {@code nagyesta/lowkey-vault:4.0.0-ubi9-minimal}.
+     * {@code nagyesta/lowkey-vault:7.4.0-ubi10-minimal}.
      */
     @WithDefault(DEFAULT_IMAGE_NAME)
     String imageName();

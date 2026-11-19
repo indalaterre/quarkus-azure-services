@@ -38,7 +38,7 @@ endif::add-copy-button-to-config-props[]
 --
 The container image name of Lowkey Vault. See the link:https://hub.docker.com/r/nagyesta/lowkey-vault/tags[artifact registry] for available tags of the default image.
 
-This extension has been tested and verified working with version `nagyesta/lowkey-vault:4.0.0-ubi9-minimal`.
+This extension has been tested and verified working with version `nagyesta/lowkey-vault:7.4.0-ubi10-minimal`.
 
 
 ifdef::add-copy-button-to-env-var[]
@@ -49,7 +49,7 @@ Environment variable: `+++QUARKUS_AZURE_KEYVAULT_DEVSERVICES_IMAGE_NAME+++`
 endif::add-copy-button-to-env-var[]
 --
 |string
-|`+++nagyesta/lowkey-vault:4.0.0-ubi9-minimal+++`
+|`+++nagyesta/lowkey-vault:7.4.0-ubi10-minimal+++`
 
 a|icon:lock[title=Fixed at build time] [[quarkus-azure-keyvault_quarkus-azure-keyvault-devservices-managed-identity-token-port]] [.property-path]##link:#quarkus-azure-keyvault_quarkus-azure-keyvault-devservices-managed-identity-token-port[`+++quarkus.azure.keyvault.devservices.managed-identity.token-port+++`]##
 ifdef::add-copy-button-to-config-props[]
